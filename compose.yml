@@ -3,10 +3,7 @@ version: '3.7'
 
 services:
   mssql:
-    image: mcr.microsoft.com/mssql/server:2022-latest
+    image: mcr.microsoft.com/mssql/server:2019-latest 
     env_file: ".env"
     ports:
       - "1433:1433"
-    volumes:
-      - mssql-data:/var/opt/mssql
-      - mssql-log:/var/opt/mssql/log
